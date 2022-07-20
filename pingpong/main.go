@@ -15,6 +15,7 @@ var (
 	Token string
 )
 
+// U2FsdGVkX19sfOsKZq6kSaeHjHKisBcqRllTmk3yZshjnCOYCttaC4AwPH5ogj6Q4iUqCwr8ZSw4DwrRqrVPuvnvzD+hGVqR1YUtfvu376Wm3Uikxop7QYDJujtVdaCj
 func init() {
 
 	flag.StringVar(&Token, "t", "", "Bot Token")
@@ -22,7 +23,6 @@ func init() {
 }
 
 func main() {
-	Token := "OTk5MjE0MTg1OTQwNTM3NDI1.GjDeAx.ouCjOABXtlVnqMgLERdUsGLRda9WAI_y_3No0w"
 	// Create a new Discord session using the provided bot token.
 	dg, err := discordgo.New("Bot " + Token)
 	if err != nil {
